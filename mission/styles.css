@@ -1,0 +1,38 @@
+#content {
+    max-width: 60%;
+    border: 1px solid darkgray;
+    margin: 40px auto;
+    padding: 100px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1 {
+    font-size: 45px;
+}
+h2 {
+    color: #035f9c;
+    font-size: 30px;
+}
+h1, h2 {
+    text-align: center;
+}
+p, li {
+    font-size: 20px;
+    line-height: 2;
+}
+#start-list {
+    font-style: italic;
+}
+img {
+    width: 30%;
+    display: block;
+    margin: 50px auto;
+}
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
