@@ -76,11 +76,11 @@ footer {
     .menu-btn {
         display: none;
     }
-    nav a {
+    .hide, nav a {
         display: inline;
     }
     nav {
-        text-align: right;
+        text-align: center;
     }
 }
 
