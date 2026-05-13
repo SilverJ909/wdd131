@@ -5,7 +5,7 @@ body {
     background-color: darkgray;
     margin: 0;
 }
-main {
+section {
     margin: auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -22,20 +22,17 @@ footer {
   text-align: center;
   color: white;
 }
+div {
+    margin-bottom: 20px;
+}
 h2 {
     text-align: center;
-}
-img {
-  padding: 5px;
-  margin: auto;
-  margin-bottom: 2rem;
-  border: 1px solid black;
-  background-color: white;
-  object-fit: cover;
 }
 nav a {
     padding: 20px;
     color: white;
+}
+.hide {
     display: none;
 }
 nav a:hover {
@@ -45,7 +42,7 @@ nav a:hover {
 div {
     text-align: center;
 }
-#menu-btn {
+.menu-btn {
     cursor: pointer;
     border: none;
     background-color: transparent;
@@ -58,6 +55,16 @@ header {
 footer {
     text-align: center;
     margin-bottom: auto;
+}
+figure img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 5px 5px 15px black;
+    display: block;
+    margin: 0 auto;
 }
 /* Modal */
 dialog img {
@@ -79,22 +86,37 @@ dialog {
 }
 
 @media screen and (min-width: 900px) {
-    main {
+    section {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media screen and (min-width: 1275px) {
-    main {
+    section {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    #menu-btn {
+    .menu-btn {
         display: none;
     }
-    nav a {
+    .hide, nav a {
         display: inline;
     }
     nav {
         text-align: center;
+    }
+    dialog img {
+        width: 60%;
+        margin: 15vh auto;
+    }
+    .close-viewer {
+        position: absolute;
+        right: 15vh;
+    }
+    .viewer {
+        margin: 50px;
+        padding: 50px;
+    }
+    .viewer img {
+        max-width: 800px;
     }
 }

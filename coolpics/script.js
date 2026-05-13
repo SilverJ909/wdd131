@@ -2,11 +2,19 @@ const gallery = document.querySelector('.gallery');
 const modal = document.querySelector('dialog');
 const modalImage = modal.querySelector('img');
 const closeButton = modal.querySelector('.close-viewer');
+const btn = document.querySelector('.menu-btn');
+const menu = document.querySelector('nav');
 
-// Event listener for opening the modal
+btn.addEventListener('click', toggleMenu);
+
+function toggleMenu() 
+{
+    menu.classList.toggle('hide');
+}
+
 gallery.addEventListener('click', openModal);
 
-function openModal(e) { //'e' or 'event' is a special parameter for events
+function openModal(e) { 
     console.log(e.target);
 
     const img = e.target;
@@ -19,12 +27,11 @@ function openModal(e) { //'e' or 'event' is a special parameter for events
 
     modal.showModal();
 }
-// Close modal on button click
+
 closeButton.addEventListener('click', () => {
     modal.close();
 });
 
-// Close modal if clicking outside the image
 modal.addEventListener('click', (event) => {
     if (event.target === modal) {
         modal.close();
