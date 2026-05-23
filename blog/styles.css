@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+header, footer {
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+}
+hr {
+  display: block;
+  border: 0;
+  border-top: 2px solid goldenrod;
+  margin: 20px 0;
+}
+.main-nav {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    justify-content: right;
+}
+.main-nav li {
+    padding: 8px;
+}
+.main-nav a {
+    color: #b30059;
+    text-decoration: none;
+}
+#book-list {
+    padding: 0 2rem;
+}
+.book {
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+.book h2 {
+    color: #b30059;
+    font-size: 1.5rem;
+    margin: 20px;
+}
+.book p {
+    padding-left: 20px;
+    text-align: right;
+}
+.book #desc {
+    text-align: left;
+}
+.book img {
+    max-width: 100%;
+    display: block;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+.book hr {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .book {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        justify-content: center;
+    }
+    .book p {
+        grid-column: 1;
+    }
+    .book img {
+        grid-column: 3;
+        grid-row: 2/6;
+    }
+    .book h2 {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .book #desc {
+        grid-column: 3;
+    }
+    .book hr {
+        display: block;
+        grid-column: 2;
+        grid-row: 1/7;
+        border-left: 2px solid goldenrod;
+        margin-left: 100px;
+        height: 100%;
+        width: 0;
+    }
+}
