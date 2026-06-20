@@ -1,12 +1,11 @@
 .logo-title {
-    width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 1em;
 }
 
 .logo-title img {
-    max-height: 200px;
-    max-width: 100px;
+    flex: 1 1 5px;
 }
 
 h1 {
@@ -14,7 +13,7 @@ h1 {
     font-weight: 500;
     font-size: 200px;
     font-style: normal;
-    min-width: 60%;
+    flex: 1 1 200px;
 }
 
 h2 {
@@ -23,6 +22,11 @@ h2 {
     font-style: normal;
     font-size: 100px;
     color: rgb(0, 90, 142);
+}
+
+hr {
+    border: solid;
+    width: 90;
 }
 
 .search-bar {
@@ -43,6 +47,11 @@ h2 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    gap: 1em;
+}
+
+.recipe img {
+    flex: 1 1 200px
 }
 
 .rating {
