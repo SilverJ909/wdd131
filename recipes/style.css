@@ -1,0 +1,61 @@
+.logo-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-title img {
+    max-height: 200px;
+    max-width: 100px;
+}
+
+h1 {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 500;
+    font-size: 200px;
+    font-style: normal;
+    min-width: 60%;
+}
+
+h2 {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 250;
+    font-style: normal;
+    font-size: 100px;
+    color: rgb(0, 90, 142);
+}
+
+.search-bar {
+    display: flex;
+    max-height: 100px;
+}
+
+.search-bar img {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.search-bar hr {
+    height: 90%;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.rating {
+    display: flex;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-icons {
+    max-height: 50px;
+    max-width: 50px;
+    justify-content: flex-end;
+}
