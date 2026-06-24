@@ -1,27 +1,49 @@
-.logo-title {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2em;
     margin-bottom: 1em;
 }
 
+body {
+    font-size: 20px;
+    max-width: 1280px;
+    margin: auto;
+    padding: 1em;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
 .logo-title img {
-    flex: 1 1 5px;
+    width: 60px;
+    height: auto;
 }
 
 h1 {
     font-family: "Amatic SC", sans-serif;
-    font-weight: 500;
-    font-size: 200px;
-    font-style: normal;
-    flex: 1 1 200px;
+    font-weight: 700;
+    font-size: 80px;   /* mobile-friendly */
+    margin: 0;
 }
 
 h2 {
     font-family: "Amatic SC", sans-serif;
-    font-weight: 250;
-    font-style: normal;
-    font-size: 100px;
+    font-weight: 700;
+    font-size: 60px;   /* mobile-friendly */
     color: rgb(0, 90, 142);
+    margin-top: 0.3em;
 }
 
 hr {
@@ -30,41 +52,82 @@ hr {
 }
 
 .search-bar {
+    width: 100%;
     display: flex;
-    max-height: 100px;
+    align-items: center;
+    background: #fff;
+    border: 2px solid rgb(0, 90, 142);
+    border-radius: 30px;
+    padding: 0.4em 1em;
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    font-size: 1rem;
+    outline: none;
 }
 
 .search-bar img {
-    max-height: 100px;
-    max-width: 100px;
-}
-
-.search-bar hr {
-    height: 90%;
+    width: 28px;
+    height: 28px;
 }
 
 .recipe {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    align-items: center;   /* center everything */
+    text-align: center;
     gap: 1em;
+    margin-top: 1.5em;
 }
 
 .recipe img {
-    flex: 1 1 200px
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.recipe button {
+    background-color: rgb(0, 90, 142);
+    color: white;
+    border: none;
+    padding: 0.4em 1em;
+    border-radius: 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
 }
 
 .rating {
     display: flex;
+    justify-content: center;
+    gap: 0.2em;
+    font-size: 1.8rem;
 }
 
-.footer {
+.recipe p {
+    max-width: 90%;
+    margin: 0 auto;
+    line-height: 1.4;
+    font-size: 1rem;
+}
+
+
+footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;   /* stack vertically */
+    align-items: center;      /* center everything */
+    gap: 1em;                 /* spacing between icons + text */
+    padding: 2em 0;
+    text-align: center;
 }
 
-.social-icons {
-    max-height: 50px;
-    max-width: 50px;
-    justify-content: flex-end;
+.social {
+    display: flex;
+    gap: 1.5em;               /* spacing between icons */
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
 }
