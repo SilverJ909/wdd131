@@ -67,6 +67,10 @@ hr {
     outline: none;
 }
 
+.search-bar button {
+    border: none;
+    background-color: white;
+}
 .search-bar img {
     width: 28px;
     height: 28px;
@@ -81,6 +85,10 @@ hr {
     margin-top: 1.5em;
     border: solid;
     padding: 1em;
+}
+
+.recipe-tags {
+    display: flex;
 }
 
 .recipe img {
@@ -98,6 +106,7 @@ hr {
 
 .rating {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 0.2em;
     font-size: 1.8rem;
@@ -163,13 +172,12 @@ footer {
 
     .recipe img {
         grid-column: 1;
-        grid-row: 1 / -1; /* spans all rows */
+        grid-row: 1 / -1;
         width: 100%;
         height: auto;
         border-radius: 12px;
     }
 
-    /* RIGHT COLUMN — all text elements */
     .recipe button {
         grid-column: 2;
         grid-row: 1;
